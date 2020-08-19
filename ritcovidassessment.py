@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -31,8 +30,8 @@ try:
             driver.find_element_by_xpath('/html/body/div/div[1]/div/div/div[1]/div[2]/div[1]/div[2]/div/div[2]').click()
             driver.close()
         except TimeoutException:
-            print 'Page TimeoutException'
+            print('Page TimeoutException')
     except TimeoutException:
-        print 'Page TimeoutException'
+        print('Page TimeoutException')
 except TimeoutException:
-    print 'Page TimeoutException'
+    print('Page TimeoutException')
